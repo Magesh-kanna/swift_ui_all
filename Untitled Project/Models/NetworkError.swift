@@ -13,7 +13,7 @@ public enum NetworkError: LocalizedError, Equatable {
     public var errorDescription: String? {
         switch self {
         case .invalidURL:
-            return "The requested endpoint URL was malformed."
+            return "The requested endpoint URL malformed."
         case .serverError(let code):
             return "Server responded with error status code: \(code)."
         case .decodingFailed:
